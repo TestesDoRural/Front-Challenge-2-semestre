@@ -1,6 +1,6 @@
 const Main = () => {
     return( 
-    <h1>Main Page</h1>
+    <h1>Insira nessa página um conteudo de explicação do projeto</h1>
 
     );
 }

@@ -8,18 +8,20 @@ import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Header />
-      <main className="flex-grow">
-        <Routes>
-          <Route path="/main" element={<Main />} />
-          <Route path="/integrantes" element={<Integrantes />} />
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/contato" element={<Contato />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+    <>
+      <div className="flex flex-col min-h-screen">
+        <Header />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/main" element={<Main />} />
+            <Route path="/integrantes" element={<Integrantes />} />
+            <Route path="/faq" element={<Faq />} />
+            <Route path="/contato" element={<Contato />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }
 export default App;
