@@ -13,14 +13,14 @@ const Footer = () => {
           <a
             href="#"
             title="Instagram"
-            className="text-[#44aaff] hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-110 inline inline w-8 h-8"
+            className="text-[#44aaff] hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-110 inline w-8 h-8"
           >
             <img src="/src/assets/Icones/icone-instagram.png" alt="Instagram"/>
           </a>
           <a
             href="#"
             title="LinkedIn"
-            className="text-[#44aaff] hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-110 inline inline w-8 h-8"
+            className="text-[#44aaff] hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-110 inline w-8 h-8"
           >
             <img src="/src/assets/Icones/icone-linkedin.png" alt="Instagram"/>
           </a>
