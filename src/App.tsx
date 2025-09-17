@@ -4,6 +4,7 @@ import Contato from "./routes/contato";
 import Main from "./routes/main";
 import Faq from "./routes/faq";
 import Footer from "./components/Footer";
+import Sobre from "./routes/Sobre";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
             <Route path="/integrantes" element={<Integrantes />} />
             <Route path="/faq" element={<Faq />} />
             <Route path="/contato" element={<Contato />} />
+            <Route path="/sobre" element={<Sobre />} />
           </Routes>
         </main>
         <Footer />

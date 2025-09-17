@@ -5,6 +5,7 @@ interface MenuCardProps {
   img: string;
   texto: string;
   path?: string;
+  className?: string;
   onClick?: () => void;
 }
 
@@ -20,10 +21,10 @@ const MenuCard = ({ img, texto, path, onClick }: MenuCardProps) => {
       `}
       onClick={onClick}
     >
-      <div className="w-full h-3/5 flex items-center justify-center">
-        <img src={img} alt={texto} className="max-h-24 object-contain" />
+      <div className="w-full h-5/5 flex items-center justify-center">
+        <img src={img} alt={texto} className="max-h-40 object-contain" />
       </div>
-      <p className="text-gray-800 text-lg font-bold pb-2">{texto}</p>
+      <p className="text-gray-800 text-lg font-bold pb-4">{texto}</p>
     </div>
   );
 

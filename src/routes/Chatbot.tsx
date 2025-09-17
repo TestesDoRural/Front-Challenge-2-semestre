@@ -31,7 +31,6 @@ const Main = () => {
 
       {openChatbot && (
         <div className="fixed bottom-4 right-4 w-96 h-96 bg-white shadow-lg rounded-xl">
-          <Chatbot />
         </div>
       )}
     </main>
