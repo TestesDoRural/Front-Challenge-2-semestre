@@ -21,7 +21,7 @@ const Header = () => {
             key={link.name}
             to={link.path}
             className={({ isActive }) =>
-              `px-4 py-2 rounded hover:bg-blue-600 rounded-full transition-colors ${
+              `px-4 py-2 hover:bg-blue-600 rounded-full transition-colors ${
                 isActive ? "bg-blue-700 font-semibold" : ""
               }`
             }

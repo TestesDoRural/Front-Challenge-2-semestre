@@ -1,4 +1,4 @@
-import Header from "./components/Header";
+import Header from "./components/header";
 import Integrantes from "./routes/integrantes";
 import Contato from "./routes/contato";
 import Main from "./routes/main";
