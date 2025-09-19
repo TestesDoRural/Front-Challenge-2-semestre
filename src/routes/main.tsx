@@ -37,15 +37,15 @@ const Main = () => {
   };
 
   const opcoes = [
-    { img: "/src/assets/icones-menu/icone-marcar-consulta.png", texto: "Marcar Consulta", path: "" },
-    { img: "/src/assets/icones-menu/icone-consulta.png", texto: "Ver Consultas", path: "/VerConsultas" },
-    { img: "/src/assets/icones-menu/icone-localizacao.png", texto: "Localização", path: "" },
-    { img: "/src/assets/icones-menu/icone-sobre.png", texto: "Sobre", path: "/sobre" },
-    { img: "/src/assets/icones-menu/chatbot_5292556.png", texto: "Chatbot", onClick: toggleChat },
-    { img: "/src/assets/icones-menu/icone-suporte.png", texto: "Suporte", path: "" },
-    { img: "/src/assets/icones-menu/icone-equipe.png", texto: "Equipe", path: "/integrantes" },
-    { img: "/src/assets/icones-menu/icone-faq.png", texto: "Faq", path: "/faq" },
-    { img: "/src/assets/icones-menu/icone-contato.png", texto: "Contato", path: "/contato" },
+    { img: "/src/assets/icones-menu/icone-marcar-consulta.jpeg", texto: "Marcar Consulta", path: "" },
+    { img: "/src/assets/icones-menu/icone-consulta.jpeg", texto: "Ver Consultas", path: "/VerConsultas" },
+    { img: "/src/assets/icones-menu/icone-localizacao.jpeg", texto: "Localização", path: "" },
+    { img: "/src/assets/icones-menu/icone-sobre.jpeg", texto: "Sobre", path: "/sobre" },
+    { img: "/src/assets/icones-menu/chatbot_5292556.jpeg", texto: "Chatbot", onClick: toggleChat },
+    { img: "/src/assets/icones-menu/icone-suporte.jpeg", texto: "Suporte", path: "" },
+    { img: "/src/assets/icones-menu/icone-equipe.jpeg", texto: "Equipe", path: "/integrantes" },
+    { img: "/src/assets/icones-menu/icone-faq.jpeg", texto: "Faq", path: "/faq" },
+    { img: "/src/assets/icones-menu/icone-contato.jpeg", texto: "Contato", path: "/contato" },
   ];
 
   return (
