@@ -14,24 +14,22 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-white shadow-md">
+    <header className="w-full bg-white shadow-md sticky sm:w-full">
       <div className="flex justify-between items-center px-6 py-4">
-        {/* Logo principal */}
         <img
           src={logo}
           alt="Logo Hospital das Clínicas"
           className="h-16 w-auto"
         />
 
-        {/* Navegação desktop */}
-        <nav className="hidden md:flex bg-blue-400 text-white p-3 gap-2 justify-center py-2 rounded-4xl shadow-md space-x-4">
+        <nav className="hidden md:flex bg-blue-400 text-white p-3 gap-2 justify-center py-2 rounded-4xl shadow-md space-x-4 ">
           {links.map((link) => (
             <NavLink
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
                 `px-4 py-2 hover:bg-blue-600 rounded-full transition-colors ${
-                  isActive ? "bg-blue-700 font-semibold" : ""
+                  isActive ? "bg-blue-700 font-semibold md:w-fit" : ""
                 }`
               }
             >

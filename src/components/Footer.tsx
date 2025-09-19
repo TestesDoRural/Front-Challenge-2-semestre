@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-[#222] text-white text-center p-5">
+    <footer className="bg-[#222] text-white text-center p-5 -mt-1.5">
       <div className="max-w-6xl mx-auto">
         <p className="mb-2 text-sm md:text-base">
           &copy; 2025 Projeto Chatbot HC — Todos os direitos reservados.
@@ -9,7 +9,7 @@ const Footer = () => {
           Desenvolvido por Giovane Amato, Lucas Vieira e Matheus Roque.
         </p>
 
-        <div className="flex flex-col items-center gap-2 sm:flex-row sm:justify-center sm:space-x-6">
+        <div className="flex flex-row items-center justify-center gap-6">
           <a
             href="#"
             title="Instagram"

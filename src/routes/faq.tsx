@@ -88,7 +88,7 @@ const Faq: React.FC = () => {
   };
 
   return (
-    <main className="min-h-screen bg-gray-50 p-4 sm:p-8">
+    <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white p-4 sm:p-8">
       {/* Seção Superior Azul */}
       <div className="max-w-4xl mx-auto flex flex-col items-center justify-center p-8 bg-blue-500 rounded-lg text-white shadow-lg text-center">
         <h1 className="text-3xl sm:text-4xl font-bold mb-2">Seja Bem-Vindo ao nosso FAQ</h1>
@@ -96,12 +96,12 @@ const Faq: React.FC = () => {
         <input
           type="text"
           placeholder="Encontre respostas para suas perguntas"
-          className="p-3 rounded-lg w-full max-w-lg text-gray-800 border-2 border-transparent focus:border-blue-300 focus:outline-none"
+          className="p-3 rounded-lg w-full max-w-lg text-gray-800 border-2 border-blue-300 focus:border-blue-800 focus:outline-none"
         />
       </div>
 
       {/* Seção das Perguntas Frequentes */}
-      <div className="max-w-4xl mx-auto mt-12">
+      <div className="max-w-4xl mx-auto mt-20">
         <h1 className="text-3xl font-bold text-center text-gray-800 mb-8">
           Perguntas frequentes
         </h1>

@@ -4,14 +4,15 @@ import Contato from "./routes/contato";
 import Main from "./routes/main";
 import Faq from "./routes/faq";
 import Footer from "./components/Footer";
-import Sobre from "./routes/Sobre";
+import Sobre from "./routes/sobre";
 import MainHome from "./components/MainHome";
+import VerConsultas from "./routes/VerConsultas";
 import { Routes, Route } from "react-router-dom";
-
+ 
 function App() {
   return (
     <>
-      <div className="flex flex-col min-h-screen">
+      <div className="flex flex-col min-h-screen bg-gradient-to-b from-blue-50 to-white">
         <Header />
         <main className="flex-grow">
           <Routes>
@@ -21,6 +22,7 @@ function App() {
             <Route path="/faq" element={<Faq />} />
             <Route path="/contato" element={<Contato />} />
             <Route path="/sobre" element={<Sobre />} />
+            <Route path="/VerConsultas" element={<VerConsultas />} />
           </Routes>
         </main>
         <Footer />

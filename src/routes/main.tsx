@@ -38,7 +38,7 @@ const Main = () => {
 
   const opcoes = [
     { img: "/src/assets/icones-menu/icone-marcar-consulta.png", texto: "Marcar Consulta", path: "" },
-    { img: "/src/assets/icones-menu/icone-consulta.png", texto: "Ver Consultas", path: "" },
+    { img: "/src/assets/icones-menu/icone-consulta.png", texto: "Ver Consultas", path: "/VerConsultas" },
     { img: "/src/assets/icones-menu/icone-localizacao.png", texto: "Localização", path: "" },
     { img: "/src/assets/icones-menu/icone-sobre.png", texto: "Sobre", path: "/sobre" },
     { img: "/src/assets/icones-menu/chatbot_5292556.png", texto: "Chatbot", onClick: toggleChat },
@@ -49,8 +49,8 @@ const Main = () => {
   ];
 
   return (
-    <main className="w-full min-h-screen bg-gray-100 flex items-center justify-center p-4">
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 w-4xl max-w-6xl">
+    <main className="w-full min-h-screen bg-gradient-to-b from-blue-50 to-white flex flex-col items-center justify-center p-4 sm:min-w-fit">
+      <div className="w-full max-w-6xl mx-auto grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] md:grid-cols-3 gap-5 2xl:grid-cols-subgrid-[repeat(auto-fit,minmax(500px,1fr))]">
         {opcoes.map((op, idx) => {
           const isLast = idx === opcoes.length - 1;
 
