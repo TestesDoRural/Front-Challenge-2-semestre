@@ -15,21 +15,21 @@ const Footer = () => {
             title="Instagram"
             className="text-[#44aaff] hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-110 inline w-8 h-8"
           >
-            <img src="/src/assets/Icones/icone-instagram.png" alt="Instagram"/>
+            <img src="/src/assets/Icones/icone-instagram.jpeg" alt="Instagram"/>
           </a>
           <a
             href="#"
             title="LinkedIn"
             className="text-[#44aaff] hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-110 inline w-8 h-8"
           >
-            <img src="/src/assets/Icones/icone-linkedin.png" alt="Instagram"/>
+            <img src="/src/assets/Icones/icone-linkedin.jpeg" alt="Linkedin"/>
           </a>
           <a
             href="mailto:contato@projetoviagem.com"
             title="E-mail"
             className="text-[#44aaff] hover:underline text-sm md:text-base transition-transform duration-300 hover:scale-110 inline w-8 h-8"
           >
-            <img src="/src/assets/Icones/email.png" alt="Instagram"/>
+            <img src="/src/assets/Icones/email.jpeg" alt="email"/>
           </a>
         </div>
       </div>
