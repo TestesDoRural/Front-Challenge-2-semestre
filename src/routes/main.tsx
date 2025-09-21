@@ -1,5 +1,14 @@
 import Card from "../components/MenuCard";
 import { useState } from "react";
+import MConsulta from "../assets/icones-menu/icone-marcar-consulta.jpeg";
+import VConsulta from "../assets/icones-menu/icone-consulta.jpeg";
+import Localiz from "../assets/icones-menu/icone-localizacao.jpeg";
+import Sobre from "../assets/icones-menu/icone-sobre.jpeg";
+import Chatbot from "../assets/icones-menu/chatbot_5292556.jpeg";
+import Suporte from "../assets/icones-menu/icone-suporte.jpeg";
+import Equipe from "../assets/icones-menu/icone-equipe.jpeg";
+import Faq from "../assets/icones-menu/icone-faq.jpeg";
+import Contato from "../assets/icones-menu/icone-contato.jpeg";
 
 declare global {
   interface Window {
@@ -37,15 +46,15 @@ const Main = () => {
   };
 
   const opcoes = [
-    { img: "/src/assets/icones-menu/icone-marcar-consulta.jpeg", texto: "Marcar Consulta", path: "" },
-    { img: "/src/assets/icones-menu/icone-consulta.jpeg", texto: "Ver Consultas", path: "/VerConsultas" },
-    { img: "/src/assets/icones-menu/icone-localizacao.jpeg", texto: "Localização", path: "" },
-    { img: "/src/assets/icones-menu/icone-sobre.jpeg", texto: "Sobre", path: "/sobre" },
-    { img: "/src/assets/icones-menu/chatbot_5292556.jpeg", texto: "Chatbot", onClick: toggleChat },
-    { img: "/src/assets/icones-menu/icone-suporte.jpeg", texto: "Suporte", path: "" },
-    { img: "/src/assets/icones-menu/icone-equipe.jpeg", texto: "Equipe", path: "/integrantes" },
-    { img: "/src/assets/icones-menu/icone-faq.jpeg", texto: "Faq", path: "/faq" },
-    { img: "/src/assets/icones-menu/icone-contato.jpeg", texto: "Contato", path: "/contato" },
+    { img: MConsulta, texto: "Marcar Consulta", path: "" },
+    { img: VConsulta, texto: "Ver Consultas", path: "/VerConsultas" },
+    { img: Localiz, texto: "Localização", path: "" },
+    { img: Sobre, texto: "Sobre", path: "/sobre" },
+    { img: Chatbot, texto: "Chatbot", onClick: toggleChat },
+    { img: Suporte, texto: "Suporte", path: "" },
+    { img: Equipe, texto: "Equipe", path: "/integrantes" },
+    { img: Faq, texto: "Faq", path: "/faq" },
+    { img: Contato, texto: "Contato", path: "/contato" },
   ];
 
   return (
