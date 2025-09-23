@@ -27,9 +27,9 @@ const UnidadeDetalhe = () => {
         href={unidade.linkMaps}
         target="_blank"
         rel="noopener noreferrer"
-        className="px-8 py-3 bg-blue-600 text-white font-bold text-lg rounded-full hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300 shadow-lg"
+        className="px-8 py-3 bg-blue-500 text-white font-bold text-lg rounded-full shadow-md hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300"
       >
-        Ver localização
+        {unidade.id === 'laboratorios-investigacao' ? 'Ver Portal' : 'Ver localização'}
       </a>
     </div>
   );

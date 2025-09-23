@@ -26,11 +26,12 @@ function App() {
             <Route path="/sobre" element={<Sobre />} />
             <Route path="/VerConsultas" element={<VerConsultas />} />
             <Route path="/Localizacao" element={<Localizacao />} />
-             <Route path="/unidades/:unidadeId" element={<UnidadeDetalhe />} />
+            <Route path="/unidades/:unidadeId" element={<UnidadeDetalhe />} />
           </Routes>
         </main>
         <Footer />
       </div>
+      
     </>
   );
 }

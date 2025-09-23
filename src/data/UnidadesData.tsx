@@ -29,7 +29,7 @@ export const unidades: Unidade[] = [
     id: 'instituto-central', 
     nome: 'Instituto Central', 
     img: Central, 
-    linkMaps: 'https://maps.app.goo.gl/bbLmXHXD8jz9b2ju8d',
+    linkMaps: 'https://maps.app.goo.gl/mD2z7farRVFXSPum8',
     descricao: 'O Instituto Central é o maior dos institutos do complexo do Hospital das Clínicas, oferecendo uma vasta gama de especialidades médicas e cirúrgicas. É um centro de referência em tratamentos de alta complexidade.'
   },
   { 
