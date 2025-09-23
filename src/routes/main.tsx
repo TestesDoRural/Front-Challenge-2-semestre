@@ -7,7 +7,7 @@ import Sobre from "../assets/icones-menu/icone-sobre.jpeg";
 import Chatbot from "../assets/icones-menu/chatbot_5292556.jpeg";
 import Suporte from "../assets/icones-menu/icone-suporte.jpeg";
 import Equipe from "../assets/icones-menu/icone-equipe.jpeg";
-import Faq from "../assets/icones-menu/icone-faq.jpeg";
+import Faq from "../assets/icones-menu/icone-faq.png";
 import Contato from "../assets/icones-menu/icone-contato.jpeg";
 
 declare global {
@@ -48,13 +48,13 @@ const Main = () => {
   const opcoes = [
     { img: MConsulta, texto: "Marcar Consulta", path: "" },
     { img: VConsulta, texto: "Ver Consultas", path: "/VerConsultas" },
-    { img: Localiz, texto: "Localização", path: "" },
+    { img: Localiz, texto: "Localização", path: "/Localizacao" },
     { img: Sobre, texto: "Sobre", path: "/sobre" },
     { img: Chatbot, texto: "Chatbot", onClick: toggleChat },
-    { img: Suporte, texto: "Suporte", path: "" },
+    { img: Suporte, texto: "Suporte ao Site", path: "" },
     { img: Equipe, texto: "Equipe", path: "/integrantes" },
-    { img: Faq, texto: "Faq", path: "/faq" },
-    { img: Contato, texto: "Contato", path: "/contato" },
+    { img: Faq, texto: "Perguntas Frequentes", path: "/faq" },
+    { img: Contato, texto: "Contato com HC", path: "/contato" },
   ];
 
   return (
