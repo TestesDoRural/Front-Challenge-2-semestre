@@ -71,7 +71,7 @@ const Header = () => {
 
       {/* Sidebar mobile */}
       <div
-        className={`fixed inset-0 z-40 bg-black bg-opacity-40 transition-opacity duration-300 ${
+        className={`fixed inset-0 z-[60] bg-black bg-opacity-40 transition-opacity duration-300 ${
           menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         onClick={() => setMenuOpen(false)}

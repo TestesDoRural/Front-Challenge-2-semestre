@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom';
-import { unidades } from '../data/UnidadesData'; // Importa os dados do arquivo que criamos
+import { unidades } from '../data/UnidadesData'; 
 
 const UnidadeDetalhe = () => {
   const { unidadeId } = useParams<{ unidadeId: string }>();

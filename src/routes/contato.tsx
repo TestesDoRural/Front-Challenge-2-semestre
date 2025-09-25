@@ -69,7 +69,7 @@ const Contato: React.FC = () => {
   };
 
   return (
-    <div className="relative flex items-center justify-center max-h-screen h-200 bg-gradient-to-b from-blue-50 to-white">
+    <div className="flex-grow flex items-center justify-center max-h-screen h-200 bg-gradient-to-b from-blue-50 to-white">
       {showNotification && (
         <Notificacao onClose={() => setShowNotification(false)} />
       )}

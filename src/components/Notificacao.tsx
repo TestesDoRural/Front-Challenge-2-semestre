@@ -6,7 +6,7 @@ interface NotificacaoProps {
 
 const Notificacao: React.FC<NotificacaoProps> = ({ onClose }) => {
   return (
-    <div className="fixed top-5 z-50 animate-slideDown w-100">
+    <div className="fixed top-5 left-1/2 -translate-x-1/2 z-[100] animate-slideDown">
       <div className="flex flex-col items-center w-full max-w-xs p-4 bg-white rounded-xl shadow-lg border border-blue-300">
         <h3 className="text-lg font-semibold text-blue-500">
           Mensagem enviada
