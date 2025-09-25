@@ -32,3 +32,20 @@
 .animate-roll-in-right {
   animation: roll-in-right 0.6s ease-out forwards;
 }
+
+
+/*Animação de notificação*/
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideDown {
+  animation: slideDown 0.4s ease-out forwards;
+}

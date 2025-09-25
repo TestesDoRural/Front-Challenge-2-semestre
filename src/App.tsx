@@ -9,13 +9,16 @@ import MainHome from "./components/MainHome";
 import VerConsultas from "./routes/VerConsultas";
 import Localizacao from "./routes/Localizacao";
 import UnidadeDetalhe from "./routes/unidadeDetalhes";
+import SuporteSite from "./routes/SuporteSite";
 import { Routes, Route } from "react-router-dom";
- 
+import ScrollTopPage from "./components/ScrollTopPage"; 
+
 function App() {
   return (
     <>
       <div className="flex flex-col min-h-screen bg-gradient-to-b from-blue-50 to-white">
         <Header />
+        <ScrollTopPage />
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<MainHome />} />
@@ -27,11 +30,11 @@ function App() {
             <Route path="/VerConsultas" element={<VerConsultas />} />
             <Route path="/Localizacao" element={<Localizacao />} />
             <Route path="/unidades/:unidadeId" element={<UnidadeDetalhe />} />
+            <Route path="/SuporteSite" element={<SuporteSite />} />
           </Routes>
         </main>
         <Footer />
       </div>
-      
     </>
   );
 }
