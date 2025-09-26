@@ -66,7 +66,7 @@ const Localizacao = () => {
   const unidadesVisiveis = unidades.slice(indiceInicial, indiceInicial + ITENS_POR_PAGINA);
 
   return (
-    <main className="w-full flex justify-center py-8 md:py-12 px-4 bg-gradient-to-b from-blue-50 to-white">
+    <main className="w-full flex justify-center py-8 md:py-12 px-4 bg-gradient-to-b from-blue-50 to-white z-0">
       <div className="w-full max-w-7xl">
         <h1 className="text-3xl md:text-4xl font-bold text-blue-500 mb-8 text-center sm:text-left">Unidades</h1>
         
@@ -87,10 +87,7 @@ const Localizacao = () => {
             onMouseMove={handleDragMove}
             onMouseUp={handleDragEnd}
             onMouseLeave={handleDragEnd}
-            // A MÁGICA ACONTECE AQUI:
-            // Esta propriedade CSS instrui o navegador a permitir que nosso código
-            // controle os gestos horizontais, desativando a navegação nativa.
-            style={{ touchAction: 'pan-y' }}
+            style={{ touchAction: 'pan-y', overflow: 'hidden'}}
           >
             <div 
               key={paginaAtual} 
@@ -101,7 +98,7 @@ const Localizacao = () => {
                 <Link 
                   key={unidade.id}
                   to={`/unidades/${unidade.id}`}
-                  className="bg-white rounded-lg shadow-md overflow-hidden group transition-transform duration-300 hover:-translate-y-2 block"
+                  className="bg-white rounded-lg shadow-md overflow-hidden group transition-transform duration-300 hover:-translate-y-2 block relative z-0"
                   onClick={(e) => {
                     const distance = Math.abs(startX - currentX);
                     if (distance > 10) e.preventDefault();

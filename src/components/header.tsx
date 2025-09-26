@@ -14,7 +14,7 @@ const Header = () => {
   ];
 
   return (
-    <header className="w-full bg-white shadow-md sticky sm:w-full">
+    <header className="h-24 w-full bg-white shadow-md sticky top-0 z-40">
       <div className="flex justify-between items-center px-6 py-4">
         <img
           src={logo}
@@ -45,12 +45,11 @@ const Header = () => {
           className="hidden md:block h-16 w-auto"
         />
 
-
         <button
           onClick={() => setMenuOpen(!menuOpen)}
           className="md:hidden flex flex-col justify-between w-8 h-6 focus:outline-none"
+          aria-label="Abrir menu"
         >
-          
           <span
             className={`block h-1 bg-blue-600 rounded transition-transform duration-300 ${
               menuOpen ? "rotate-45 translate-y-2" : ""
@@ -69,17 +68,21 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Sidebar mobile */}
+      {/* Overlay + Sidebar mobile */}
       <div
-        className={`fixed inset-0 z-[60] bg-black bg-opacity-40 transition-opacity duration-300 ${
+        // overlay com z-index muito alto (inline style usado para evitar conflito com stacking contexts)
+        className={`fixed inset-0 bg-black bg-opacity-40 transition-opacity duration-300 ${
           menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
+        style={{ zIndex: 9999 }}
         onClick={() => setMenuOpen(false)}
       >
-        <div
-          className={`absolute top-0 left-0 w-64 h-full bg-white shadow-xl p-6 flex flex-col transform transition-transform duration-300 ${
+        {/* painel do menu como fixed e z ainda maior */}
+        <aside
+          className={`fixed top-0 left-0 w-4/5 max-w-xs h-full bg-white shadow-xl p-6 transform transition-transform duration-300 ${
             menuOpen ? "translate-x-0" : "-translate-x-full"
           }`}
+          style={{ zIndex: 10000 }}
           onClick={(e) => e.stopPropagation()}
         >
           <h2 className="text-xl font-bold text-blue-600 mb-6">Menu</h2>
@@ -88,7 +91,7 @@ const Header = () => {
           <img
             src={medc}
             alt="Logo Medicina USP"
-            className="h-auto w-auto mb-6"
+            className="max-w-full h-auto mb-6"
           />
 
           {/* Links */}
@@ -110,7 +113,7 @@ const Header = () => {
               </NavLink>
             ))}
           </nav>
-        </div>
+        </aside>
       </div>
     </header>
   );
