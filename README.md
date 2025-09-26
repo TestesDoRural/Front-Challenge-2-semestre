@@ -52,9 +52,4 @@ Nosso objetivo é **reduzir a taxa de absenteísmo para menos de 10%.** Para iss
 
 ## Endereço repositório do projeto no GITHUB: 
 
-Você pode acessar nosso repósitorio [Aqui](https://github.com/MLG-Consultoria/Frontend-Challenge)
-
-
-
-
-Repositório para salvar os códigos de Front-end do Challenge 2° Semestre
+Você pode acessar nosso repósitorio [Aqui](https://github.com/MLG-Consultoria/Frontend-Challenge-Sprint3)
