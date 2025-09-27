@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const MainHome: React.FC = () => {
   return (
-    <div className="flex flex-col items-center justify-center text-center p-10 bg-white rounded-lg shadow-xl mt-50 ml-auto mr-auto w-2/3 mb-10 ">
+    <div className="flex flex-col items-center justify-center text-center p-10 bg-white rounded-lg shadow-xl mt-40 ml-auto mr-auto w-2/3 mb-10 sm:mt-50 md:mt-50 lg:mt-50 xl:mt-50">
       <h1 className="text-4xl font-bold text-gray-800">Seja Bem Vindo</h1>
       <h2 className="mt-2 text-xl text-gray-600">Ao projeto Chatbot - HC</h2>
 
