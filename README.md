@@ -54,4 +54,6 @@ Nosso objetivo é **reduzir a taxa de absenteísmo para menos de 10%.** Para iss
 
 Você pode acessar nosso repósitorio [Aqui](https://github.com/MLG-Consultoria/Frontend-Challenge-Sprint3)
 
+## Endereço repositório do projeto no GITHUB: 
+
 Você pode acessar nosso video de apresentação [Aqui](https://www.youtube.com/watch?v=machykKuTZI)
